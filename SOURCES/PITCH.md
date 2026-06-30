@@ -6,7 +6,11 @@
 
 **Submitted to:** APEC x Stellar Hackathon (SEA) — May 14 to late July 2026
 **Tracks targeted:** Practical Payments · Meaningful DeFi · Localized Financial Tools · Composability
-**Team:** *[add team name + members]*
+**Team:** KAYA
+- Christian Gabrielle Mariveles — Team Lead
+- Hannah Munoz — Smart Contracts / Product
+- Adrian Joseph Salim — Backend / Frontend / AI / Stellar Integration
+- Aldrhey Jave M. Agsunod — Backend / Frontend / AI / Stellar Integration
 
 ---
 

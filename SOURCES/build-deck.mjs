@@ -183,7 +183,7 @@ function chevron(slide, x, y, color = C.faint) {
 
   s.addShape(pptx.ShapeType.line, { x: M, y: 6.25, w: W - 2 * M, h: 0, line: { color: C.border, width: 0.75 } });
   s.addText("APEC x Stellar Hackathon (SEA)  ·  May–Jul 2026", { x: M, y: 6.4, w: 7, h: 0.4, fontFace: FONT, fontSize: 12, color: C.faint, align: "left", valign: "middle" });
-  s.addText("Team: [your team name]", { x: W - 5.6, y: 6.4, w: 5, h: 0.4, fontFace: FONT, fontSize: 12, color: C.faint, align: "right", valign: "middle" });
+  s.addText("Team KAYA · Christian Gabrielle Mariveles, Hannah Munoz, Adrian Joseph Salim, Aldrhey Jave M. Agsunod", { x: M, y: 6.4, w: W - 2 * M, h: 0.4, fontFace: FONT, fontSize: 9.5, color: C.faint, align: "right", valign: "middle" });
 }
 
 /* ============================ SLIDE 2 — PROBLEM ============================ */
@@ -607,7 +607,7 @@ for (const f of features) {
   let tx = (W - total) / 2;
   tracks.forEach(([t, c]) => { pill(s, t, c, tx, 5.2, 2.45); tx += 2.65; });
 
-  s.addText("Team: [your team name]  ·  [email]  ·  [github / demo link]", { x: 0, y: 6.4, w: W, h: 0.4, fontFace: FONT, fontSize: 12, color: C.faint, align: "center", valign: "middle" });
+  s.addText("Team KAYA  ·  github.com/ShinkoSiVes/KAYA_apac-x-stelar_Hackathon", { x: 0, y: 6.4, w: W, h: 0.4, fontFace: FONT, fontSize: 11, color: C.faint, align: "center", valign: "middle" });
 }
 
 /* ---------------------------- write ------------------------------ */

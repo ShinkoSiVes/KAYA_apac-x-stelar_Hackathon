@@ -3,7 +3,7 @@
 **AI budgeting copilot for Filipino students & young professionals, built on Stellar.**
 It intervenes at the moment of temptation — redirecting impulse spending into a yield-earning savings vault, enabling gasless local QR payments, and building an on-chain financial reputation users can borrow against.
 
-*APEC x Stellar Hackathon (SEA) · Tracks: Practical Payments · Meaningful DeFi · Localized Tools · Composability · Team: [name]*
+*APEC x Stellar Hackathon (SEA) · Tracks: Practical Payments · Meaningful DeFi · Localized Tools · Composability · Team KAYA*
 
 ---
 

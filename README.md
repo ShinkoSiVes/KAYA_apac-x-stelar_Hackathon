@@ -26,7 +26,9 @@ Fund in (GCash/Maya) → AI coaches every purchase → Save it (Soroban vault) o
 - Freighter / passkey wallets
 
 ## Team
-- [Name] — [Role]
-- [Name] — [Role]
+- Christian Gabrielle Mariveles — Team Lead
+- Hannah Munoz — Smart Contracts / Product
+- Adrian Joseph Salim — Backend / Frontend / AI / Stellar Integration
+- Aldrhey Jave M. Agsunod — Backend / Frontend / AI / Stellar Integration
 
-**Location:** Philippines
+**Location:** Philippines · **Repo:** https://github.com/ShinkoSiVes/KAYA_apac-x-stelar_Hackathon

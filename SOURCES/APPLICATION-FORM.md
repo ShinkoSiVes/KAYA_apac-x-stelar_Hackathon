@@ -6,15 +6,19 @@ Copy-paste answers for the fields most hackathon application forms ask for. Two 
 
 ## Basic info
 
-- **Project / Team name:** KAYA  *(team: [your team name])*
+- **Project / Team name:** KAYA (Team KAYA)
 - **Tagline (≤ 12 words):** Kaya mo 'to. — AI budgeting that turns impulse spending into on-chain savings.
 - **Category / Track(s):** Practical Payments · Meaningful DeFi · Localized Financial Tools · Composability
 - **Blockchain:** Stellar (Soroban smart contracts)
 - **Region / Market:** Philippines (extensible across Southeast Asia)
 - **Stage:** Concept / pre-build (idea submission)
-- **Team members:** [name — role], [name — role], [name — role]
-- **Contact email:** [email]
-- **Links:** [demo or landing], [GitHub], [pitch deck PDF], [video]
+- **Team members:**
+  - Christian Gabrielle Mariveles — Team Lead
+  - Hannah Munoz — Smart Contracts / Product
+  - Adrian Joseph Salim — Backend / Frontend / AI / Stellar Integration
+  - Aldrhey Jave M. Agsunod — Backend / Frontend / AI / Stellar Integration
+- **Contact email:** [add team contact email]
+- **Links:** https://github.com/ShinkoSiVes/KAYA_apac-x-stelar_Hackathon · SOURCES/KAYA-Deck.pdf · SOURCES/KAYA-Concept-Note.pdf
 
 ---
 
