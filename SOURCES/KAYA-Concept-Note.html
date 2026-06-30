@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>KAYA — Concept Note</title>
+<style>
+  @page { size: A4; margin: 2cm 1.8cm; }
+  * { box-sizing: border-box; }
+  body { font-family: "Segoe UI", Arial, sans-serif; color: #1c2230; font-size: 11pt; line-height: 1.5; }
+  h1 { font-size: 26pt; margin: 0 0 2pt 0; color: #4c1d95; }
+  h2 { font-size: 14pt; margin: 20pt 0 6pt 0; color: #5b21b6; border-bottom: 2px solid #ddd6fe; padding-bottom: 3pt; }
+  h3 { font-size: 12pt; margin: 12pt 0 3pt 0; color: #6d28d9; }
+  p { margin: 5pt 0; }
+  .lead { font-size: 12pt; color: #475569; margin: 4pt 0 6pt 0; }
+  .meta { color: #64748b; font-size: 9.5pt; margin: 2pt 0 0 0; }
+  .tagline { color: #7c3aed; font-weight: 600; }
+  table { border-collapse: collapse; width: 100%; margin: 8pt 0; font-size: 10pt; }
+  th, td { border: 1px solid #e2e8f0; padding: 6pt 8pt; text-align: left; vertical-align: top; }
+  th { background: #f5f3ff; color: #5b21b6; font-weight: 600; }
+  ul { margin: 4pt 0 6pt 0; padding-left: 18pt; }
+  li { margin: 2pt 0; }
+  .pill { display: inline-block; border: 1px solid #c4b5fd; color: #6d28d9; background: #f5f3ff; border-radius: 10pt; padding: 1pt 8pt; font-size: 9pt; font-weight: 600; margin-right: 4pt; }
+  .callout { background: #f0fdf4; border-left: 4px solid #22c55e; padding: 6pt 10pt; margin: 6pt 0; }
+  .note { background: #fffbeb; border-left: 4px solid #f59e0b; padding: 6pt 10pt; margin: 6pt 0; font-size: 10pt; }
+  .feature { border: 1px solid #e2e8f0; border-radius: 6pt; padding: 8pt 12pt; margin: 8pt 0; }
+  .label { font-size: 8.5pt; letter-spacing: 1pt; color: #94a3b8; font-weight: 700; text-transform: uppercase; }
+  .flow { font-family: "Consolas", monospace; background: #f8fafc; border: 1px solid #e2e8f0; padding: 8pt; border-radius: 4pt; font-size: 9.5pt; color: #334155; }
+  hr { border: none; border-top: 1px solid #e2e8f0; margin: 10pt 0; }
+</style>
+</head>
+<body>
+
+<h1>KAYA</h1>
+<p class="tagline">"Kaya mo 'to."</p>
+<p class="lead">An AI budgeting copilot that turns impulse spending into on-chain savings, gasless payments, and real financial credibility — built on Stellar.</p>
+<p class="meta">APEC x Stellar Hackathon (SEA) · May–July 2026 · Team: [your team name] · [email] · [demo/repo link]</p>
+<p>
+  <span class="pill">Practical Payments</span>
+  <span class="pill">Meaningful DeFi</span>
+  <span class="pill">Localized Tools</span>
+  <span class="pill">Composability</span>
+</p>
+
+<h2>1. The Problem (and why it's local)</h2>
+<p>Young Filipinos are entering the digital economy faster than any generation before them — but the tools around them are built for <em>tracking</em>, not <em>behavior change</em>, and almost none connect to productive assets.</p>
+<ul>
+  <li><strong>Impulse spending is the default.</strong> E-wallets (GCash, Maya) make spending frictionless and saving an afterthought. A ₱250 coffee, repeated weekly, is the difference between a savings buffer and none.</li>
+  <li><strong>No emergency buffer.</strong> A large share of young Filipinos hold near-zero liquid savings; one emergency means high-interest debt.</li>
+  <li><strong>Thin credit files.</strong> Lenders have almost no data on a 22-year-old's discipline, so responsible young people still get rejected or charged predatory rates.</li>
+  <li><strong>Passive savings.</strong> Even saved money just sits in a wallet earning nothing.</li>
+</ul>
+<p><strong>The gap:</strong> no tool closes the loop between behavior (coaching at the moment of decision), productive assets (yield on what you don't spend), payments (spending what you saved), and credibility (turning discipline into borrowing power). KAYA closes that loop, and Stellar is the rail that makes it possible.</p>
+
+<h2>2. Who it's for</h2>
+<table>
+  <tr><th>Persona</th><th>Situation</th><th>What KAYA gives them</th></tr>
+  <tr><td><strong>Iskolar</strong> — student (18–24)</td><td>Allowance-based, tempted by food delivery &amp; online sales, zero savings</td><td>A coach that says "save it instead," turning saved ₱250 coffees into a growing, yield-earning balance</td></tr>
+  <tr><td><strong>Yuppie</strong> — young pro (23–30)</td><td>First real income, lifestyle creep, wants to save but lacks discipline</td><td>Automated cooling-off savings, gasless local payments, and a credit reputation for future loans</td></tr>
+  <tr><td><strong>Negosyante</strong> — micro-merchant</td><td>Accepts QRPh, wants instant settlement</td><td>Receives the asset they want via Stellar path payments when a KAYA user pays</td></tr>
+</table>
+<p class="meta">Primary market: Philippines, designed to extend across SEA by swapping in local anchors and stablecoins.</p>
+
+<h2>3. The Solution — the KAYA "Money Loop"</h2>
+<p class="flow">Fund In (fiat &rarr; stablecoin) &rarr; AI Coach ("Kaya afford it?") &rarr; Save it (vault) OR Pay it (QR) &rarr; On-chain Reputation &rarr; Future Credit</p>
+<ol>
+  <li><strong>Fund in</strong> — deposit local fiat (GCash/Maya/bank) via a Stellar anchor; receive a local stablecoin. <span class="label">On/Off-Ramps</span></li>
+  <li><strong>AI coaches</strong> every meaningful purchase: "Kaya mo ba 'to?" (Can you afford this?).</li>
+  <li><strong>Branch:</strong> <strong>No &rarr; "Save it Instead"</strong> routes money into a Soroban yield vault with a cooling-off lockup. <strong>Yes &rarr; "Pay It!"</strong> executes an instant gasless QR path payment.</li>
+  <li><strong>Reputation</strong> — every disciplined action updates an on-chain Financial Health Score other protocols can read.</li>
+</ol>
+
+<h2>4. Feature Deep-Dives</h2>
+
+<div class="feature">
+<h3>Feature 1 — The "Delayed Gratification" Vault <span class="pill">Meaningful DeFi</span></h3>
+<p><strong>User story:</strong> Maya wants a ₱250 latte. KAYA flags she's over her "wants" budget and offers a "Save it Instead" button. One tap moves ₱250 into her vault — earning micro-yield, locked for 48 hours so the craving passes.</p>
+<p class="label">How it works on Stellar</p>
+<ul>
+  <li>A Soroban smart contract ("KAYA Vault") accepts deposits of a local stablecoin.</li>
+  <li>Idle funds are routed into an existing Stellar yield aggregator / liquidity pool (we compose, not build).</li>
+  <li><strong>The twist — a 48-hour cooling-off lockup</strong> enforced per deposit: DeFi mechanics used to break the impulse-spending cycle.</li>
+</ul>
+<div class="callout"><strong>Why it judges well:</strong> DeFi with a genuine human purpose tied to a real asset and a real local problem — not yield for yield's sake.</div>
+<p class="meta"><strong>Composability:</strong> Soroban contract + third-party yield pool + anchor-issued stablecoin, stitched into one feature.</p>
+</div>
+
+<div class="feature">
+<h3>Feature 2 — Native KAYA Wallet Funding &amp; Cash-Out <span class="pill">On/Off-Ramps</span></h3>
+<p><strong>User story:</strong> Carlo links GCash, taps "Add ₱1,000," confirms in the familiar flow, and seconds later sees ₱1,000 spendable in KAYA. "Cash Out" returns pesos to his bank or e-wallet.</p>
+<p class="label">How it works on Stellar</p>
+<ul>
+  <li>SEP-24 (hosted) and SEP-6 (programmatic) deposit/withdrawal against existing SEA anchors.</li>
+  <li>Deposit via GCash, Maya, or bank &rarr; anchor issues the local stablecoin straight into the wallet.</li>
+  <li>SEP-10 (wallet auth) + SEP-12 (KYC handoff) so KAYA never custodies identity documents.</li>
+</ul>
+<div class="callout"><strong>Why it judges well:</strong> the clearest proof of "build on existing rails, not your own gateway." We explicitly consume anchor infrastructure.</div>
+<p class="meta"><strong>Composability:</strong> zero payment-gateway code — KAYA is a thin client over standardized anchor SEPs.</p>
+</div>
+
+<div class="feature">
+<h3>Feature 3 — "Kaya Afford It? Pay It!" QR Payments <span class="pill">Practical Payments</span></h3>
+<p><strong>User story:</strong> The AI approves Maya's groceries — "Kaya mo 'to!" A "Pay Now" button appears; she scans the store's QRPh code and the exact amount is paid. She never thinks about crypto, gas, or conversion.</p>
+<p class="label">How it works on Stellar</p>
+<ul>
+  <li>QR scanner compatible with QRPh / regional EMVCo standards.</li>
+  <li>A Stellar path payment converts her stablecoin to the merchant's required asset atomically (composing native DEX/AMM liquidity).</li>
+  <li><strong>Fee-bump (sponsored fees):</strong> KAYA's backend pays the microscopic XLM fee &rarr; the app feels completely gasless.</li>
+</ul>
+<div class="callout"><strong>Why it judges well:</strong> a real purchase, at a real merchant, on a real local QR standard, with UX indistinguishable from GCash.</div>
+<p class="meta"><strong>Composability:</strong> native DEX/AMM for conversion + built-in fee-bump for gasless UX. No custom relayer.</p>
+</div>
+
+<div class="feature">
+<h3>Feature 4 — On-Chain Financial Health Score <span class="pill">Identity &amp; Credibility</span></h3>
+<p><strong>User story:</strong> After months of hitting goals and respecting cooling-off periods, Carlo has a verifiable KAYA Score. A Stellar micro-lender later offers a low-collateral loan because it could read his track record on-chain.</p>
+<p class="label">How it works on Stellar</p>
+<ul>
+  <li>Good habits recorded as on-chain attestations / entries in a Soroban reputation registry.</li>
+  <li>The score is a portable, user-controlled Web3 primitive.</li>
+  <li>Other Stellar micro-lending protocols read it to grant under-collateralized loans.</li>
+</ul>
+<div class="callout"><strong>Why it judges well:</strong> extends a simple "health score" into durable, ecosystem-wide utility — exactly what composability unlocks.</div>
+<p class="meta"><strong>Composability:</strong> designed to be consumed by others — KAYA becomes a building block in the wider Stellar credit stack.</p>
+</div>
+
+<h2>5. Architecture</h2>
+<table>
+  <tr><th>Layer</th><th>Components</th></tr>
+  <tr><td><strong>Client</strong></td><td>KAYA Mobile App (React Native / Flutter) · AI Budgeting Engine · Stellar Wallet (Freighter / Passkey)</td></tr>
+  <tr><td><strong>Backend</strong></td><td>KAYA Backend orchestrating AI + Stellar SDK · Fee-Bump service that sponsors network fees (gasless UX)</td></tr>
+  <tr><td><strong>Stellar</strong></td><td>Local Anchor (SEP-24/6) · Horizon / Soroban RPC &rarr; Soroban Vault (48h lockup + yield), Path Payment (&rarr; QR merchant), Reputation Registry</td></tr>
+</table>
+
+<h2>6. Stellar Tech Stack</h2>
+<table>
+  <tr><th>Layer</th><th>Technology / Standard</th><th>Used for</th></tr>
+  <tr><td>Smart contracts</td><td>Soroban</td><td>Yield vault w/ cooling-off lockup; reputation registry</td></tr>
+  <tr><td>Network access</td><td>Horizon + Soroban RPC</td><td>Submitting tx, reading state</td></tr>
+  <tr><td>Payments</td><td>Path Payments</td><td>QR purchase: stablecoin &rarr; merchant asset</td></tr>
+  <tr><td>UX / fees</td><td>Fee-Bump (sponsored fees)</td><td>Gasless experience for users</td></tr>
+  <tr><td>Liquidity</td><td>Stellar DEX / AMM + yield pool</td><td>Conversion + vault yield (composed, not built)</td></tr>
+  <tr><td>On/off-ramp</td><td>SEP-24, SEP-6</td><td>Fiat deposit/withdraw via local anchors</td></tr>
+  <tr><td>Auth / KYC</td><td>SEP-10, SEP-12</td><td>Wallet auth + anchor-side KYC</td></tr>
+  <tr><td>Asset</td><td>Local PHP / SEA stablecoin</td><td>Unit of account throughout</td></tr>
+  <tr><td>Wallet</td><td>Freighter / Passkey smart-wallet</td><td>Low-friction key management</td></tr>
+</table>
+
+<h2>7. Composability — reuse vs. build</h2>
+<p><strong>We build (thin, opinionated):</strong> the AI coaching layer, the cooling-off vault logic, the reputation registry schema, and the consumer UX that makes it feel like a normal peso wallet.</p>
+<p><strong>We reuse (the heavy lifting):</strong> existing SEA anchors (SEP-24/6); existing yield pools + Stellar native DEX/AMM; path payments + fee-bump; Freighter/passkey wallets + on-chain attestations.</p>
+
+<h2>8. Criteria Coverage</h2>
+<table>
+  <tr><th>Requirement</th><th>How KAYA meets it</th></tr>
+  <tr><td>User-facing financial app for real people</td><td>Mobile money coach for young Filipinos</td></tr>
+  <tr><td>Practical payment app</td><td>AI-approved QRPh payments, gasless via fee-bump</td></tr>
+  <tr><td>Meaningful DeFi using real assets</td><td>Soroban yield vault on a local stablecoin w/ 48h lockup</td></tr>
+  <tr><td>Localized financial tool / local economy</td><td>GCash/Maya/bank ramps + PHP stablecoin as unit of account</td></tr>
+  <tr><td>Integrate with local anchors</td><td>SEP-24/SEP-6 against SEA Stellar anchors</td></tr>
+  <tr><td>Give assets utility (earn/swap/disburse)</td><td>Vault yield · path-payment swap · QR pay &amp; cash-out</td></tr>
+  <tr><td>Composability — reuse building blocks</td><td>Anchors, yield pools, DEX/AMM, fee-bump, wallets, attestations</td></tr>
+  <tr><td>Wallets &amp; identity</td><td>Freighter/passkey + on-chain reputation score</td></tr>
+</table>
+
+<h2>9. Roadmap</h2>
+<table>
+  <tr><th>Phase</th><th>Window</th><th>Milestones</th></tr>
+  <tr><td>Foundations</td><td>May–early Jun 2026</td><td>Wallet + testnet account; issue local stablecoin; SEP-24 deposit demo</td></tr>
+  <tr><td>Core DeFi + Payments</td><td>June 2026</td><td>Soroban vault w/ 48h lockup + yield; QR path-payment + fee-bump</td></tr>
+  <tr><td>AI + Reputation</td><td>Early–mid Jul 2026</td><td>"Kaya afford it?" coaching; reputation registry + score</td></tr>
+  <tr><td>Polish + Pitch</td><td>Late Jul 2026</td><td>End-to-end demo; judging submission</td></tr>
+  <tr><td>Post-hackathon</td><td>Aug–Sep 2026</td><td>Anchor partnerships; pilot users; micro-lending integration</td></tr>
+</table>
+
+<h2>10. Risks &amp; Honest Gaps</h2>
+<ul>
+  <li><strong>PH anchor availability:</strong> production PH fiat anchors are still maturing &rarr; the build integrates the testnet/reference anchor (SEP-24/6), wired to swap in live anchors at launch.</li>
+  <li><strong>Yield source maturity:</strong> we integrate the most established available pool; the vault's yield backend is swappable.</li>
+  <li><strong>Regulatory:</strong> KYC delegated to licensed anchors (SEP-12); under-collateralized lending is a future, partner-provided layer that reads our score — KAYA does not underwrite it.</li>
+</ul>
+<div class="note"><strong>Note for judges:</strong> a fully public production PH fiat anchor with open SEP access is still maturing. For the hackathon build we integrate the Stellar Anchor reference/testnet implementation, with UX wired exactly as it will be for live GCash/Maya/bank anchors at launch.</div>
+
+<h2>11. Impact, KPIs &amp; The Ask</h2>
+<p><strong>Impact:</strong> KAYA converts everyday impulse spending into savings, yield, and creditworthiness for the most underserved-by-design segment — young Filipinos — using rails that already exist on Stellar.</p>
+<p><strong>KPIs:</strong> ₱ redirected from impulse spend into the vault per user/month · % of cooling-off periods that end in keeping the savings · active QR payments settled via path payment · KAYA Scores generated and loan offers unlocked.</p>
+<p><strong>The ask:</strong> technical mentorship from the Stellar ecosystem (Soroban + anchors), introductions to SEA anchor and yield/lending partners for composability, and the chance to compete for the prize pool to fund a pilot.</p>
+
+<h2>Appendix — 90-second Demo Script</h2>
+<ol>
+  <li><strong>Fund in:</strong> "Add ₱1,000" &rarr; GCash-style flow (testnet anchor) &rarr; balance appears in KAYA.</li>
+  <li><strong>Get coached:</strong> Try to buy a ₱250 coffee &rarr; AI: "Hindi pa kaya this week." &rarr; tap <strong>Save it Instead</strong> &rarr; ₱250 enters the vault, 48h lock + live micro-yield.</li>
+  <li><strong>Approved purchase:</strong> Scan a grocery QRPh code &rarr; AI: "Kaya mo 'to!" &rarr; <strong>Pay Now</strong> &rarr; path payment settles, no gas shown (fee-bumped).</li>
+  <li><strong>Reputation:</strong> Open profile &rarr; KAYA Score ticked up &rarr; "a lending protocol can read this on-chain."</li>
+</ol>
+
+</body>
+</html>
